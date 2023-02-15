@@ -1,0 +1,15 @@
+kind: Kustomization
+
+namePrefix: s2-
+
+bases:
+  - ../../base
+
+commonLabels:
+  app: sensor-sim-2
+
+patchesStrategicMerge:
+  - sensor-sim-cm.yaml
+
+
+

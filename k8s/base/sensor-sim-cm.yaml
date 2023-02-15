@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: sensor-sim-conf
+data:
+  SERVER: 'https://tb-route-node-root-thingsboard.apps.ocp5.stormshift.coe.muc.redhat.com'
+  TOKEN: 'mmzvU1czMh5rrioYSSMN'

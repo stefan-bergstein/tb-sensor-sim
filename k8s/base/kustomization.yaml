@@ -1,0 +1,5 @@
+kind: Kustomization
+
+resources:
+  - sensor-sim-cm.yaml  
+  - sensor-sim-depl.yaml
