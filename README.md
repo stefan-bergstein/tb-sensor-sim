@@ -38,3 +38,13 @@ https://thingsboard.ipodman build . -t tb-sensor-sim:latest -f containerfileo/do
 podman run -t -e SERVER=https://tb-route-node-root-thingsboard.apps.ocp5.stormshift.coe.muc.redhat.com -e TOKEN=msuDTuQEEp2ktsyAnFnl  tb-sensor-sim:latest
 ```
 
+## Deploy to OCP / K8S
+
+- Ensure you are in the right project/namespace. 
+- Update SERVER and TOKEN in the config maps for your env.
+- Then apply the following for sensor-1 and sensor-2.
+
+```
+cd k8s/overlays/sensor-1
+oc apply -k .
+```
