@@ -30,7 +30,7 @@ python sensor-http.py --server  https://tb-route-node-root-thingsboard.apps.ocp5
 
 ## Build container
 ```
-https://thingsboard.ipodman build . -t tb-sensor-sim:latest -f containerfileo/docs/faq/
+podman build . -t tb-sensor-sim:latest -f containerfileo/docs/faq/
 ```
 
 ## Run container locally
